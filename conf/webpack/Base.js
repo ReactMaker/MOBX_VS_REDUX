@@ -45,7 +45,6 @@ class WebpackBaseConfig {
             use: [
               {
                 loader: 'babel-loader',
-                query: { presets: ['es2015', 'stage-0'], "plugins": ['transform-decorators-legacy'] },
               }, {
                 loader: 'eslint-loader',
                 options: {
