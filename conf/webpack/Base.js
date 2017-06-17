@@ -128,6 +128,7 @@ class WebpackBaseConfig {
           containers: `${this.srcPathAbsolute}/containers/`,
           static: `${this.srcPathAbsolute}/static/`,
           theme: `${this.srcPathAbsolute}/theme/`,
+          mobx_flow: `${this.srcPathAbsolute}/mobx_flow`,
         },
         extensions: [
           '.js',
