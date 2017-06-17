@@ -128,6 +128,7 @@ class WebpackBaseConfig {
           containers: `${this.srcPathAbsolute}/containers/`,
           static: `${this.srcPathAbsolute}/static/`,
           theme: `${this.srcPathAbsolute}/theme/`,
+          redux_flow: `${this.srcPathAbsolute}/redux_flow`,
         },
         extensions: [
           '.js',
