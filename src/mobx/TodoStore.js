@@ -3,15 +3,11 @@ import { observable, action } from 'mobx';
 class TodoStore {
   @observable todos = [];
 
-  constructor() {
-    this.test = 111;
-  }
-
-  @action addTodo(text) {
+  @action addTodo = (text) => {
     this.todos.push({ text });
   }
 
-  @action removeTodo(index) {
+  @action removeTodo = (index) => {
     this.todos.splice(index, 1);
   }
 }

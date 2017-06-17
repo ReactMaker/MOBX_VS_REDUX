@@ -10,15 +10,12 @@ export default class AddTodo extends Component {
     handleAddTodo: PropTypes.func,
   }
 
-  @observable text = '11';
+  @observable text = '';
 
-  addTodo = (text) => {
+  @action addTodo = (text) => {
     const { handleAddTodo } = this.props;
     handleAddTodo(text);
-
-    this.setState({
-      text: '',
-    });
+    this.text = '';
   }
 
   @action changeText = (e) => {

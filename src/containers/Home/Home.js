@@ -23,7 +23,7 @@ export default class Home extends Component {
           handleAddTodo={addTodo}
         />
         <TodoList
-          todos={[]}
+          todos={todos.toJS()}
           handleRemoveTodo={removeTodo}
         />
       </div>
