@@ -26,7 +26,7 @@ export default class Home extends Component {
     const { todos, addTodo, removeTodo } = this.props;
 
     return (
-      <div className="container">
+      <div id="home">
         <AddTodo
           handleAddTodo={addTodo}
         />
